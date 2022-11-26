@@ -10,16 +10,32 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/favicon.ico" />
-    <link rel="font-style" href="font/HomemadeApple-Regular.ttf" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=rosaline@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=paquito@400&display=swap"
+      rel="stylesheet"
+    />
     <title>MY PROFILE</title>
   </head>
   <body>
     <header></header>
     <main>
+      <nav>
+        <div id="navadd">
+          <h5>MY Profile</h5>
+        </div>
+        <div class="navitems"><a href="#main-container">Home</a></div>
+        <div class="navitems"><a href="#projects-container">Projects</a></div>
+        <div class="navitems"><a href="#about-container"> About Me</a></div>
+        <div class="navitems"><a href="#contact-container">Hire Me</a></div>
+      </nav>
       <div id="main-container">
         <img id="cloud1" src="images/cloud.png" alt="cloud" />
-        <h1>Jhon pillip</h1>
-        <p>Front End Developer</p>
+        <h1 id="namemain">Jhon pillip</h1>
+        <p id="fed">Front End Developer</p>
         <img id="cloud2" src="images/cloud.png" alt="cloud" />
         <img src="images/mountain.png" alt="mountain" />
       </div>
@@ -47,6 +63,7 @@
         </div>
       </div>
       <div id="about-container">
+        <h2>About</h2>
         <img id="mypic" src="images/PngItem_4042710.png" alt="Jhon pic" />
         <h1>Jhon Pillip</h1>
         <p id="myabout">
@@ -63,26 +80,50 @@
         </p>
         <h2>Say holla...👋</h2>
         <div id="holla">
-          <a href="https://www.instagram.com/"
+          <a href="https://www.instagram.com/" target="_blank"
             ><img
+              class="image"
               src="images/instagram-icon-33483-32x32.ico"
               alt="instagramlogo"
           /></a>
-          <a href="https://twitter.com/i/flow/login"
+          <a href="https://twitter.com/i/flow/login" target="_blank"
             ><img
+              class="image"
               src="images/logo-twitter-png-5860-32x32.ico"
               alt="twitterlogo"
           /></a>
-          <a href="https://telegram.org/"
-            ><img src="images/telegram-logo-944-32x32.ico" alt="telegramlogo"
+          <a href="https://telegram.org/" target="_blank"
+            ><img
+              class="image"
+              src="images/telegram-logo-944-32x32.ico"
+              alt="telegramlogo"
           /></a>
         </div>
       </div>
       <div id="contact-container">
         <h2>Hire Me</h2>
-        <button>C</button>
+        <form action="mailto:saikumarmolleti@outlook.com" method="post">
+          <div id="names">
+            <label for="Firstname">FirstName*</label>
+            <input type="text" id="Fristname" required />
+            <label for="Lastname">LastName*</label>
+            <input type="text" id="Lastname" required />
+            <label for="Email">Email*</label>
+            <input type="Email" id="Email" required />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10">
+  Type your test here</textarea
+            >
+          </div>
+          <div id="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div></div>
+    </footer>
   </body>
 </html>
