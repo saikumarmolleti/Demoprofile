@@ -10,20 +10,28 @@ nav {
   color: #28cc9e;
   background-color: #132f2b;
   position: fixed;
-  top: 0px;
-  width: 100vw;
+  width: 100%;
+  justify-content: space-between;
 }
 
 #navadd {
-  margin-left: 60px;
-  margin-right: 750px;
-  position: sticky;
+  justify-content: left;
 }
 
 .navitems {
   color: #28cc9e;
   margin-top: 35px;
   padding: 0 30px 0 30px;
+  position: sticky;
+}
+
+#divitem {
+  display: flex;
+  justify-content: right;
+}
+
+.cc {
+  padding-right: 0px;
 }
 
 a {
@@ -56,9 +64,9 @@ p {
   font-family: 'Paquito', serif;
 }
 #main-container {
+  width: 100%;
   background-color: #ddfee4;
-  position: relative;
-  padding-top: 250px;
+  padding-top: 200px;
   margin-bottom: 0px;
 }
 
@@ -67,14 +75,18 @@ p {
 }
 
 #cloud1 {
-  position: absolute;
+  padding-left: 500px;
   right: 400px;
   top: 150px;
 }
 
 #cloud2 {
-  position: absolute;
+  padding-bottom: 300px;
   left: 400px;
+}
+
+#mountain {
+  margin-right: 50px;
 }
 
 #projects-container {
@@ -91,6 +103,7 @@ p {
 }
 
 #gallery {
+  display: flex;
   margin-right: 30px;
   float: left;
   height: 250 px;
@@ -216,4 +229,11 @@ button[type='reset'] {
   background-color: #ddfee4;
   border-style: none;
   -webkit-border-radius: 10px;
+}
+
+#footitem {
+  padding-top: 30px;
+  background-color: #132f2b;
+  color: #ddfee4;
+  height: 30px;
 }
